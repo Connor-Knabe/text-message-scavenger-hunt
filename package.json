@@ -1,0 +1,25 @@
+{
+  "name": "auto-text-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Connor-Knabe/auto-text-bot.git"
+  },
+  "author": "Connor Knabe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Connor-Knabe/auto-text-bot/issues"
+  },
+  "homepage": "https://github.com/Connor-Knabe/auto-text-bot#readme",
+  "dependencies": {
+    "cron": "^1.7.1",
+    "express": "^4.17.1",
+    "log4js": "^4.5.1",
+    "twilio": "^3.33.1"
+  }
+}
