@@ -15,4 +15,4 @@ logger.error('Error log started');
 const textService = require('./textService.js')(logger);
 
 require('./cronService.js')(textService);
-require('./routes.js');
+require('./routes.js')(app, logger, textService);
