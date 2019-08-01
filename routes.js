@@ -1,6 +1,11 @@
 module.exports = (app, logger, messenger) => {
     const textMessages = require('./textMessages.js');
 
+    app.get('/health', (req, res) => {
+        res.status(200);
+        res.send('healthy');
+    });
+
     app.post('/sms', function(req, res) {
         var incomingPhoneNumber = req.body.From;
 
