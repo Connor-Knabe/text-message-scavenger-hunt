@@ -28,12 +28,10 @@ module.exports = (app, logger, textService) => {
         ];
         var textString = msg.textMessage.toLowerCase();
         if (containsValidString(textString)) {
-            if (true) {
-                //DEBUG
-                // if (containsValidTimeRange(textString)) {
+            if (containsValidTimeRange(textString)) {
                 var splitMsg = textString.split(' ');
-
-                var hint = textMessages.clues[splitMsg[1]][splitMsg[2]];
+				var clueNumber = splitMsg[2] - 1;
+                var hint = textMessages.clues[splitMsg[1]][clueNumber];
                 var txtMsg = `Here's your hint ${hint}`;
                 textService.sendMessage(login.numberArray, txtMsg);
             } else {
