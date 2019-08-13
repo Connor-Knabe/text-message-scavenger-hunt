@@ -57,7 +57,7 @@ module.exports = (app, logger, textService) => {
 		var isValid = false;
 		var currentDay = new Date().getDate();
 		//DEBUG SET TO 15 NOT 10
-		if (str[1] <= currentDay && str[1] >= 10 && str[1] < 25) {
+		if (str[1] <= currentDay && str[1] >= 15 && str[1] < 25) {
 			isValid = true;
 		}
 		return isValid;
