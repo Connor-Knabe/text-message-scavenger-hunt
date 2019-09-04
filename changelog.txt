@@ -1,0 +1,1 @@
+v1.0 - sends automated texts on a schedule
