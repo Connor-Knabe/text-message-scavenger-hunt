@@ -1,1 +1,2 @@
+v1.1 - only sends message to incoming phone number
 v1.0 - sends automated texts on a schedule
