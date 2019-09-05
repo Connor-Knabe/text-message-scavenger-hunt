@@ -30,14 +30,14 @@ module.exports = (app, logger, textService) => {
 				var hint = textMessages.clues[splitMsg[1]][hintNumber];
 				var txtMsg = `Here's your hint ${hint}`;
 
-				textService.sendMessage(login.numberArray, txtMsg);
+				textService.sendMessage(incomingPhoneNumber, txtMsg);
 			} else {
 				var txtMsg = 'No cheating! You cannot access hints for days in the future. Or days outside of the 15th and 24th.';
-				textService.sendMessage(login.numberArray, txtMsg);
+				textService.sendMessage(incomingPhoneNumber, txtMsg);
 			}
 		} else {
 			var txtMsg = 'Unrecognized command: "' + msg.textMessage + '" Please type hint day of month(14-24) number (1-3).  For example "hint 15 2" to get the 2nd hint for day 15';
-			textService.sendMessage(login.numberArray, txtMsg);
+			textService.sendMessage(incomingPhoneNumber, txtMsg);
 		}
 
 		res.status(204);
